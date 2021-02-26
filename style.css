@@ -64,7 +64,7 @@ header ul a{
 }
 .content .textBox h2 span{
    color: #017143;
-   font-size: 1.2em;             /* <--- 1.2  */
+   font-size: 1.1em;             /* <--- 1.2  */
    font-weight: 800;             /* <--- 900 */
 }
 .content .textBox p{
