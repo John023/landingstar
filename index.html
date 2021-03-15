@@ -6,70 +6,75 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CafeAmerica</title>
    <link rel="icon" type="image/png" href="img/icond.png"/>
-   <!-- <link rel="stylesheet" href="plugins/fontawesome-stars.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <section>
       <div class="circle"></div>
+      
       <header>
          <a href="#"><img src="img/icond.png" class="logo"></a>
-         <!-- <center><h1 style="font-family: 'Playball', cursive; font-size: 4em; text-align: center;">CafeAmerica</h1></center> -->
-         <!-- <a href="#"><img src="img/logo.png" class="logo"></a> -->
-         <!-- <div class="toggle" onclick="toggleMenu();"></div>
-         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">What's New</a></li>
-            <li><a href="#">Contact</a></li>
-         </ul> -->
       </header>
+
       <div class="content">
          <div class="textBox">
             <h2>Coming soon<br>It's <span>CafeAmerica</span></h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore iusto rerum deserunt expedita natus nisi veritatis nam tempora, cum, repellat numquam dicta laudantium molestias ad quas sint repellendus nemo quo.</p>
-            <!-- <div class="ps-page__content"><img src="img/coming-soon.jpg" alt="">
-               <figure>
-                   <figcaption>NEW STORE WE BE LAUNCHED IN:</figcaption>
-                   <ul class="ps-countdown" data-time="July 21, 2020 15:37:25">
-                       <li><span class="days"></span>
-                           <p>Days</p>
-                       </li>
-                       <li><span class="hours"></span>
-                           <p>Hours</p>
-                       </li>
-                       <li><span class="minutes"></span>
-                           <p>Minutes</p>
-                       </li>
-                       <li><span class="seconds"></span>
-                           <p>Second</p>
-                       </li>
-                   </ul>
-               </figure>
-            </div> -->
-            <a href="">¡Subscribe!</a>
+            
+            <!-- <a href="" onclick="this.classList.add('expand')">¡Subscribe!</a> -->
          </div>
+
+         <div class="container">
+            <div class="email" onclick="this.classList.add('expand')">
+               <div class="from">
+                  <div class="from-contents">
+                     <div class="name">¡Subscribe!</div>
+                  </div>
+               </div>
+               <div class="to">
+                  <div class="to-contents">
+                     <div class="top">
+                     <div class="name-large">¡Subscribe!</div>
+                     <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                        <div class="x">
+                           <div class="line1"></div>
+                           <div class="line2"></div>
+                        </div>
+                     </div>
+                     </div>
+                     <div class="bottom">
+                        <div class="row">
+                           <i class="fa fa-user" style="font-size:36px; margin: 0 20px;"></i>
+                           <div class="link">
+                              <label for="name">Digita tu nombre *</label>
+                              <input type="text" id="name" placeholder="Ej. David Bedoya">
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <i class="fa fa-envelope" style="font-size:27px; margin: 0 20px;"></i>
+                           <div class="link">
+                              <label for="email">Digita tu email *</label>
+                              <input type="email" id="email" placeholder="Digita tu correo electrónico">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <div class="imgBox">
             <img src="img/cup.png" class="starbucks">
          </div>
       </div>
-      <ul class="thumb">
-         <!-- <li><img src="img/store1.png" onclick="imgSlider('img/img1.png'); changeCircleColor('#281e36');"></li> -->
-         <!-- <li><img src="img/store2.png" onclick="imgSlider('img/img2.png'); changeCircleColor('#d752b1');"></li> -->
-         <!-- <li><img src="img/store2.png" onclick="imgSlider('img/img3.png'); changeCircleColor('#d752b1');"></li> -->
-      </ul>
+
       <ul class="sci">
          <li><a href=""><img src="img/facebook.png" alt=""></a></li>
          <li><a href=""><img src="img/twitter.png" alt=""></a></li>
          <li><a href=""><img src="img/instagram.png" alt=""></a></li>
       </ul>
    </section>
-
-   <!-- <script src="plugins/jquery.barrating.min.js"></script> -->
-   <script type="text/javascript">
-      function imgSlider(anything){ document.querySelector('.starbucks').src = anything;}
-      function changeCircleColor(color){ const circle = document.querySelector('.circle'); circle.style.background = color;}
-      function toggleMenu(){ let menuToggle = document.querySelector('.toggle'); let navigation = document.querySelector('.navigation'); menuToggle.classList.toggle('active'); navigation.classList.toggle('active')}
-   </script>
 </body>
 </html>
